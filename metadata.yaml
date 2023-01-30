@@ -1,0 +1,5 @@
+homepage: "https://osoma.kr"
+documentation: "https://oso.ma/kakaopixel-gtm-tag-template"
+versions:
+  - sha: 1cc14e81083210b481b8f3015dc4fd6dff8cb3c6
+    changeNotes: Initial release.
