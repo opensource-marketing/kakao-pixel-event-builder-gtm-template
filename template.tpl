@@ -202,8 +202,8 @@ const transformParams = (items) => {
   let list = [];
   for (let i = 0; i < items.length; i++) {
     let item = {
-      id: items[i].items_id,
-      name: items[i].items_name,
+      id: items[i].item_id,
+      name: items[i].item_name,
       quantity: items[i].quantity,
       price: items[i].price,
     };
@@ -250,7 +250,7 @@ const getParams = () => {
         total_quantity: data.total_quantity,
         total_price: data.total_price,
         currency: data.currency,
-        products: transformParams(data.products),
+        products: transformParams(data.ecItems),
         tag: tag,
       };
       return params;
@@ -259,7 +259,7 @@ const getParams = () => {
         total_quantity: data.total_quantity,
         total_price: data.total_price,
         currency: data.currency,
-        products: transformParams(data.products),
+        products: transformParams(data.ecItems),
       };
       return params;
     }
